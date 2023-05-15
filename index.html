@@ -101,7 +101,7 @@
             </section>
             <section class="store">
                 <button type="button" aria-label="slider button">
-                    <svg class="btn-top slider-btn" width="32" height="32">
+                    <svg class="btn-top icon-btn" width="32" height="32">
                         <use href="./img/icons.svg#arrow-top"></use>
                     </svg>
                 </button>
@@ -204,7 +204,7 @@
                     </li>
                 </ul>
                 <button type="button" aria-label="slider button">
-                    <svg class="btn-bottom slider-btn" width="32" height="32">
+                    <svg class="btn-bottom icon-btn" width="32" height="32">
                         <use href="./img/icons.svg#arrow-bottom"></use>
                     </svg>
                 </button>
@@ -229,6 +229,99 @@
                     </li>
                 </ul>
             </section>
+            <section class="gallery" id="gallery">
+                <button type="button" aria-label="gallery button">
+                    <svg class="icon-btn" width="32" height="32">
+                      <use href="./img/icons.svg#arrow-left"></use>
+                    </svg>
+                </button>
+                <ul class="gallery-list">
+                    <li class="galery-list__item">
+                        <picture>
+                            <source srcset="./img\gallery\slide-desk1.jpg 1x, ./img\gallery\slide-desk1@2x.jpg 2x" media="(min-width: 1280px)">
+                            <source srcset="./img\gallery\slide-tab1.jpg 1x, ./img\gallery\slide-tab1@2x.jpg 2x" media="(min-width: 1024px)">
+                            <source srcset="./img\gallery\slide-mob1.jpg 1x, ./img\gallery\slide-mob1@2x.jpg 2x">
+                            <img src="./img/gallery/slide-mob1.jpg" alt="man picking big red juicy tomatoes">
+                        </picture>
+                    </li>
+                    <li class="galery-list__item">
+                        <picture>
+                            <source srcset="./img\gallery\slide-desk2.jpg 1x, ./img\gallery\slide-desk2@2x.jpg 2x" media="(min-width: 1280px)">
+                            <source srcset="./img\gallery\slide-tab2.jpg 1x, ./img\gallery\slide-tab2@2x.jpg 2x" media="(min-width: 1024px)">
+                            <source srcset="./img\gallery\slide-mob2.jpg 1x, ./img\gallery\slide-mob2@2x.jpg 2x">
+                            <img src="./img/gallery/slide-mob1.jpg" alt="little girls in the garden with big red tomatoes">
+                        </picture>
+                    </li>
+                    <li class="galery-list__item">
+                        <picture>
+                            <source srcset="./img\gallery\slide-desk3.jpg 1x, ./img\gallery\slide-desk3@2x.jpg 2x" media="(min-width: 1280px)">
+                            <source srcset="./img\gallery\slide-tab3.jpg 1x, ./img\gallery\slide-tab3@2x.jpg 2x" media="(min-width: 1024px)">
+                            <source srcset="./img\gallery\slide-mob3.jpg 1x, ./img\gallery\slide-mob3@2x.jpg 2x">
+                            <img src="./img/gallery/slide-mob1.jpg" alt="a farmer inspects a bush of tomatoes with ripe fruits">
+                        </picture>
+                    </li>
+                </ul>
+                <button type="button" aria-label="gallery button">
+                    <svg class="icon-btn" width="32" height="32">
+                      <use href="./img/icons.svg#arrow-right"></use>
+                    </svg>
+                </button>
+            </section>
         </main>
+        <footer>
+            <a class="logo" href="">
+                <svg class="logo-icon" width="32" height="32">
+                    <use href="./img/icons.svg#logo"></use>
+                </svg>
+                Cucina
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Store</a></li>
+                    <li><a href="">Recipes</a></li>
+                    <li><a href="">Gallery</a></li>
+                </ul>
+            </nav>
+            <address>
+                <ul>
+                    <li>
+                        <svg class="icon" width="24" height="24">
+                            <use href="./img/icons.svg#location"></use>
+                        </svg>
+                        <p>Elvia Elviaveien 1, 1234 Oslo</p>
+                    </li>
+                    <li>
+                        <svg class="icon" width="24" height="24">
+                            <use href="./img/icons.svg#email"></use>
+                        </svg>
+                        <p>willie.jennings@example.com</p>
+                    </li>
+                </ul>
+            </address>
+            <ul class="social-link">
+                    <li>
+                        <svg class="social-icon icon" width="24" height="24">
+                            <use href="./img/icons.svg#tumblr"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg class="social-icon icon" width="24" height="24">
+                            <use href="./img/icons.svg#instagram"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg class="social-icon icon" width="24" height="24">
+                            <use href="./img/icons.svg#youtube"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg class="social-icon icon" width="24" height="24">
+                            <use href="./img/icons.svg#twitter"></use>
+                        </svg>
+                    </li>
+                </ul>
+                <p>By using this website, you agree to the <a href="">Terms of Service</a> and <a href="">Privacy Policy</a></p>
+        </footer>
     </body>
 </html>
