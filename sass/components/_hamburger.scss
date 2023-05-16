@@ -1,0 +1,53 @@
+%transform {
+    transform-origin: right center;
+    @include transition;
+}
+.burger {
+    position: relative;
+    width: 32px;
+    height: 16px;
+    background: none;
+    @extend %transform
+}
+.is-open .burger {
+    transform: scaleX(0.5);
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: getColor('text');
+    border-radius: 1px;
+    left: 0;
+    @extend %transform
+}
+
+.burger span:nth-child(1) {
+    top: 0;
+}
+
+.burger span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger span:nth-child(3) {
+    bottom: 0;
+}
+
+.is-open .burger span:nth-child(1) {
+    height: 3px;
+    transform: rotate(-24deg);
+}
+
+.is-open .burger span:nth-child(2) {
+    right: 0;
+    transform:translateY(-50%) scaleX(0);
+}
+
+.is-open .burger span:nth-child(3) {
+    height: 3px;
+    transform: rotate(24deg);
+}

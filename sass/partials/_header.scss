@@ -1,0 +1,52 @@
+.header {
+    position: relative;
+    background-image: $mob_bg_header;
+
+    .container {
+        display: flex;
+        padding: 12px 0;
+    }
+}
+
+.burger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 99;
+}
+
+.desk-menu {
+    @media only screen and (max-width: 959px) {
+        display: none;
+    }
+}
+
+
+.mob-menu {
+    @media only screen and (min-width: 960px) {
+        display: none;
+    }
+}
+
+.menu-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100dvh;
+    padding: 20px;
+    background-color: getColor('body_bg');
+    transform: translate(100%, -100%);
+    @include transition;
+    z-index: 10;
+
+    .is-open & {
+        transform: translate(0, 0);
+    }
+
+    .logo {
+        gap: 20px;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}

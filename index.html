@@ -18,45 +18,51 @@
         <link rel="stylesheet" href="./dist/css/main.min.css" />
     </head>
     <body>
-        <header>
-            <a class="logo" href="">
-                <svg class="logo-icon" width="32" height="32">
-                    <use href="./img/icons.svg#logo"></use>
-                </svg>
-                Cucina
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Store</a></li>
-                    <li><a href="">Recipes</a></li>
-                    <li><a href="">Gallery</a></li>
-                </ul>
-            </nav>
-            <button type="button">Contact us</button>
-            <button type="button" aria-label="mobile menu">
-                <div id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </button>
-            <div class="mob-menu">
+        <header class="header">
+            <div class="container">
                 <a class="logo" href="">
                     <svg class="logo-icon" width="32" height="32">
                         <use href="./img/icons.svg#logo"></use>
                     </svg>
                     Cucina
                 </a>
-                <nav>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Store</a></li>
-                        <li><a href="">Recipes</a></li>
-                        <li><a href="">Gallery</a></li>
-                    </ul>
-                </nav>
-                <button type="button">Contact us</button>
+                <div class="mob-menu" id="mobile-menu">
+                    <button class="burger" type="button" aria-label="mobile menu"  aria-expanded="false"
+                            aria-controls="mobile-menu"
+                            aria-label="mobile menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                    </button>
+                    <div class="menu-backdrop">
+                        <a class="logo" href="">
+                            <svg class="logo-icon" width="32" height="32">
+                                <use href="./img/icons.svg#logo"></use>
+                            </svg>
+                            Cucina
+                        </a>
+                        <nav>
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Store</a></li>
+                                <li><a href="">Recipes</a></li>
+                                <li><a href="">Gallery</a></li>
+                            </ul>
+                        </nav>
+                        <button type="button">Contact us</button>
+                    </div>
+                </div>
+                <div class="desk-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Store</a></li>
+                            <li><a href="">Recipes</a></li>
+                            <li><a href="">Gallery</a></li>
+                        </ul>
+                    </nav>
+                    <button type="button">Contact us</button>
+                </div>
             </div>
         </header>
         <main>
@@ -217,7 +223,7 @@
                             <source srcset="./img/recipes/recipes-desk1.jpg 450w, ./img/recipes/recipes-desk1@2x.jpg 900w" media="(min-width: 1024px)" sizes="450px">
                             <img src="./img/recipes/recipes-mob01.jpg" alt="">
                         </picture>
-                        <p>Bell pepper pasta</p>
+                        <h2>Bell pepper pasta</h2>
                     </li>
                     <li>
                         <picture>
@@ -225,7 +231,7 @@
                             <source srcset="./img/recipes/recipes-desk2.jpg 450w, ./img/recipes/recipes-desk2@2x.jpg 900w" media="(min-width: 1024px)" sizes="450px">
                             <img src="./img/recipes/recipes-mob02.jpg" alt="">
                         </picture>
-                        <p>Tomato paste</p>
+                        <h2>Tomato paste</h2>
                     </li>
                 </ul>
             </section>
@@ -323,5 +329,12 @@
                 </ul>
                 <p>By using this website, you agree to the <a href="">Terms of Service</a> and <a href="">Privacy Policy</a></p>
         </footer>
+         <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous">
+        </script>
+        <script src="./js/mobile-menu.js"></script>
     </body>
 </html>

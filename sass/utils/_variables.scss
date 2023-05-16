@@ -1,0 +1,18 @@
+$colors: (
+    'body_bg': #100F0F,
+     'text': #F3F3F3,
+     'primary': rgb(188 26 26 / .2),
+     'active': rgb(188 26 26 / .5)
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+$mob_bg_hero: linear-gradient(237.05deg, #6F6666 1.42%, #100F0F 45.36%);
+$mob_bg_header: linear-gradient(270deg, #6F6666 2.17%, #100F0F 75.72%);
+$bg_header: linear-gradient(256.51deg, rgba(111, 102, 102, 0.9) 26.96%, rgba(16, 15, 15, 0.9) 79.08%, rgba(16, 15, 15, 0.9) 79.08%);
+$bg_hero: linear-gradient(228.52deg, rgba(111, 102, 102, 0.9) 4.71%, rgba(16, 15, 15, 0.9) 39.77%, rgba(16, 15, 15, 0.9) 44.21%);
+$store_shadow: drop-shadow(0px 0px 50px #7C7070);
+$btn_rad: 16px;
+$card_rad: 8px;
