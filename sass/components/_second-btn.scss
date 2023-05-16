@@ -1,0 +1,13 @@
+.second-btn {
+    padding: 9px 34px;
+    font-weight: 800;
+    color: getColor('text');
+    background: none;
+    border: 1px solid getColor('text');
+    border-radius: $btn_rad_big;
+    transition: $trans_border, $trans_color;
+    &:is(:hover, :focus) {
+        color: getColor('active');
+        border-color: getColor('active');
+    }
+}

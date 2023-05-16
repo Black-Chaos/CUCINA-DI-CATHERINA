@@ -1,0 +1,17 @@
+.prime-btn {
+    width: 108px;
+    height: 29px;
+    display: grid;
+    place-items: center;
+    color: getColor('text');
+    background-color: getColor('brand');
+    border-radius: $btn_rad;
+    transition: $trans_bg;
+    @media screen and (min-width: 960px) {
+        width: 195px;
+        height: 43px;
+    }
+    &:is(:hover, :focus) {
+    background-color: getColor('active');
+    }
+}
