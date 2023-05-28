@@ -20,90 +20,123 @@
     <body>
         <header class="header">
             <div class="container">
-                <a class="logo" href="">
+                <a class="logo link" href="">
                     <svg class="logo-icon" width="32" height="32">
                         <use href="./img/icons.svg#logo"></use>
                     </svg>
                     Cucina
                 </a>
                 <div class="mob-menu" id="mobile-menu">
-                    <button class="burger" type="button" aria-label="mobile menu"  aria-expanded="false"
-                            aria-controls="mobile-menu"
-                            aria-label="mobile menu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                    <button
+                        class="burger"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu"
+                        aria-label="mobile menu"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </button>
                     <div class="menu-backdrop">
-                        <a class="logo" href="">
+                        <a class="logo link" href="">
                             <svg class="logo-icon" width="32" height="32">
                                 <use href="./img/icons.svg#logo"></use>
                             </svg>
                             Cucina
                         </a>
                         <nav>
-                            <ul>
-                                <li><a href="">Home</a></li>
-                                <li><a href="">Store</a></li>
-                                <li><a href="">Recipes</a></li>
-                                <li><a href="">Gallery</a></li>
+                            <ul class="mob-nav">
+                                <li><a class="link" href="#Home">Home</a></li>
+                                <li><a class="link" href="#Store">Store</a></li>
+                                <li><a class="link" href="#Recipes">Recipes</a></li>
+                                <li><a class="link" href="#Gallery">Gallery</a></li>
                             </ul>
                         </nav>
-                        <button type="button">Contact us</button>
+                        <button class="second-btn" type="button">Contact us</button>
                     </div>
                 </div>
                 <div class="desk-menu">
                     <nav>
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Store</a></li>
-                            <li><a href="">Recipes</a></li>
-                            <li><a href="">Gallery</a></li>
+                        <ul class="site-nav">
+                            <li><a class="link" href="#Home">Home</a></li>
+                            <li><a class="link" href="#Store">Store</a></li>
+                            <li><a class="link" href="#Recipes">Recipes</a></li>
+                            <li><a class="link" href="#Gallery">Gallery</a></li>
                         </ul>
                     </nav>
-                    <button type="button">Contact us</button>
+                    <button class="second-btn" type="button">Contact us</button>
                 </div>
             </div>
         </header>
         <main>
             <section class="hero">
-                <h1>Cucina di catherina</h1>
-                <p>We know, you will love our product</p>
-                <button>Buy now</button>
-                <p>
-                    <span class="wrap"><span class="digit">14</span> different tastes</span>
-                    <span class="wrap"><span class="digit">31</span> factories around the world</span>
-                </p>
-                <picture>
-                    <source srcset="./img/hero-img-mob.png 221w, ./img/hero-img-mob@2x.png 442w" media="(max-width: 1023px)" sizes="202px">
-                    <source srcset="./img/hero-img.png 435w, ./img/hero-img@2x.png 870w" media="(min-width: 1024px)" sizes="432px">
-                    <img
-                        src="./img/hero-img.png"
-                        alt="pasta sauce"
-                    />
-                </picture>
-                <ul class="social-link">
-                    <li>
-                        <svg class="social-icon icon" width="24" height="24">
-                            <use href="./img/icons.svg#tumblr"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg class="social-icon icon" width="24" height="24">
-                            <use href="./img/icons.svg#instagram"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg class="social-icon icon" width="24" height="24">
-                            <use href="./img/icons.svg#youtube"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg class="social-icon icon" width="24" height="24">
-                            <use href="./img/icons.svg#twitter"></use>
-                        </svg>
-                    </li>
-                </ul>
+                <div class="container">
+                    <div class="text-wrap">
+                        <h1 class="hero-title">Cucina di catherina</h1>
+                        <p class="hero-text">We know,<br>you will <span class="accent">love</span> our product</p>
+                        <button class="prime-btn" type="button">Buy now</button>
+                        <p class="desc">
+                            <span class="wrap"><span class="digit">14</span> different tastes</span>
+                            <span class="wrap"
+                                ><span class="digit">31</span> factories around the world</span
+                            >
+                        </p>
+                    </div>
+                    <picture class="hero-thumb">
+                        <source media="(min-width: 960px)"
+                            srcset="./img/hero/hero-img.avif 435w, ./img/hero/hero-img@2x.avif 870w" type="image/avif"
+                            sizes="435px"
+                        />
+                        <source media="(min-width: 960px)"
+                            srcset="./img/hero/hero-img.png 435w, ./img/hero/hero-img@2x.png 870w" type="image/png"
+                            sizes="435px"
+                        />
+                        <source
+                            srcset="./img/hero/hero-img-mob.avif 221w, ./img/hero/hero-img-mob@2x.avif 442w" type="image/avif"
+                            sizes="202px"
+                        />
+                        <source
+                            srcset="./img/hero/hero-img-mob.png 221w, ./img/hero/hero-img-mob@2x.png 442w" type="image/png"
+                            sizes="202px"
+                        />
+                        <img
+                            class="hero-img"
+                            src="./img/hero/hero-img-mob.png"
+                            alt="pasta sauce"
+                        />
+                    </picture>
+                    <ul class="social-link">
+                        <li>
+                            <a class="link" href="">
+                                <svg class="social-icon icon" width="24" height="24">
+                                    <use href="./img/icons.svg#tumblr"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link" href="">
+                                <svg class="social-icon icon" width="24" height="24">
+                                    <use href="./img/icons.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link" href="">
+                                <svg class="social-icon icon" width="24" height="24">
+                                    <use href="./img/icons.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link" href="">
+                                <svg class="social-icon icon" width="24" height="24">
+                                    <use href="./img/icons.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section class="store">
                 <button type="button" aria-label="slider button">
@@ -116,7 +149,12 @@
                         <ul>
                             <li>
                                 <img
-                                    srcset="./img/store/store-mob1.jpg 156w, ./img/store/store-mob1@2x.jpg 312w, ./img/store/store-desk1.jpg 349w, ./img/store/store-desk1@2x.jpg 698w"
+                                    srcset="
+                                        ./img/store/store-mob1.jpg     156w,
+                                        ./img/store/store-mob1@2x.jpg  312w,
+                                        ./img/store/store-desk1.jpg    349w,
+                                        ./img/store/store-desk1@2x.jpg 698w
+                                    "
                                     sizes="(min-width: 1024px) 349px, 156px"
                                     src="./img/store/store-mob1.jpg"
                                     alt="sauce"
@@ -130,7 +168,12 @@
                             </li>
                             <li>
                                 <img
-                                    srcset="./img/store/store-mob2.jpg 156w, ./img/store/store-mob2@2x.jpg 312w, ./img/store/store-desk2.jpg 349w, ./img/store/store-desk2@2x.jpg 698w"
+                                    srcset="
+                                        ./img/store/store-mob2.jpg     156w,
+                                        ./img/store/store-mob2@2x.jpg  312w,
+                                        ./img/store/store-desk2.jpg    349w,
+                                        ./img/store/store-desk2@2x.jpg 698w
+                                    "
                                     sizes="(min-width: 1024px) 349px, 156px"
                                     src="./img/store/store-mob2.jpg"
                                     alt="sauce"
@@ -148,7 +191,12 @@
                         <ul>
                             <li>
                                 <img
-                                    srcset="./img/store/store-mob3.jpg 156w, ./img/store/store-mob3@2x.jpg 312w, ./img/store/store-desk3.jpg 349w, ./img/store/store-desk3@2x.jpg 698w"
+                                    srcset="
+                                        ./img/store/store-mob3.jpg     156w,
+                                        ./img/store/store-mob3@2x.jpg  312w,
+                                        ./img/store/store-desk3.jpg    349w,
+                                        ./img/store/store-desk3@2x.jpg 698w
+                                    "
                                     sizes="(min-width: 1024px) 349px, 156px"
                                     src="./img/store/store-mob3.jpg"
                                     alt="sauce"
@@ -162,7 +210,12 @@
                             </li>
                             <li>
                                 <img
-                                    srcset="./img/store/store-mob4.jpg 156w, ./img/store/store-mob4@2x.jpg 312w, ./img/store/store-desk4.jpg 349w, ./img/store/store-desk4@2x.jpg 698w"
+                                    srcset="
+                                        ./img/store/store-mob4.jpg     156w,
+                                        ./img/store/store-mob4@2x.jpg  312w,
+                                        ./img/store/store-desk4.jpg    349w,
+                                        ./img/store/store-desk4@2x.jpg 698w
+                                    "
                                     sizes="(min-width: 1024px) 349px, 156px"
                                     src="./img/store/store-mob4.jpg"
                                     alt="sauce"
@@ -180,7 +233,12 @@
                         <ul>
                             <li>
                                 <img
-                                    srcset="./img/store/store-mob5.jpg 156w, ./img/store/store-mob5@2x.jpg 312w, ./img/store/store-desk5.jpg 349w, ./img/store/store-desk5@2x.jpg 698w"
+                                    srcset="
+                                        ./img/store/store-mob5.jpg     156w,
+                                        ./img/store/store-mob5@2x.jpg  312w,
+                                        ./img/store/store-desk5.jpg    349w,
+                                        ./img/store/store-desk5@2x.jpg 698w
+                                    "
                                     sizes="(min-width: 1024px) 349px, 156px"
                                     src="./img/store/store-mob5.jpg"
                                     alt="sauce"
@@ -194,7 +252,12 @@
                             </li>
                             <li>
                                 <img
-                                    srcset="./img/store/store-mob6.jpg 156w, ./img/store/store-mob6@2x.jpg 312w, ./img/store/store-desk6.jpg 349w, ./img/store/store-desk6@2x.jpg 698w"
+                                    srcset="
+                                        ./img/store/store-mob6.jpg     156w,
+                                        ./img/store/store-mob6@2x.jpg  312w,
+                                        ./img/store/store-desk6.jpg    349w,
+                                        ./img/store/store-desk6@2x.jpg 698w
+                                    "
                                     sizes="(min-width: 1024px) 349px, 156px"
                                     src="./img/store/store-mob6.jpg"
                                     alt="sauce"
@@ -219,17 +282,45 @@
                 <ul>
                     <li>
                         <picture>
-                            <source srcset="./img/recipes/recipes-mob01.jpg 246w, ./img/recipes/recipes-mob01@2x.jpg 492w" media="(max-width: 1023px)" sizes="246px">
-                            <source srcset="./img/recipes/recipes-desk1.jpg 450w, ./img/recipes/recipes-desk1@2x.jpg 900w" media="(min-width: 1024px)" sizes="450px">
-                            <img src="./img/recipes/recipes-mob01.jpg" alt="">
+                            <source
+                                srcset="
+                                    ./img/recipes/recipes-mob01.jpg    246w,
+                                    ./img/recipes/recipes-mob01@2x.jpg 492w
+                                "
+                                media="(max-width: 1023px)"
+                                sizes="246px"
+                            />
+                            <source
+                                srcset="
+                                    ./img/recipes/recipes-desk1.jpg    450w,
+                                    ./img/recipes/recipes-desk1@2x.jpg 900w
+                                "
+                                media="(min-width: 1024px)"
+                                sizes="450px"
+                            />
+                            <img src="./img/recipes/recipes-mob01.jpg" alt="" />
                         </picture>
                         <h2>Bell pepper pasta</h2>
                     </li>
                     <li>
                         <picture>
-                            <source srcset="./img/recipes/recipes-mob02.jpg 246w, ./img/recipes/recipes-mob02@2x.jpg 492w" media="(max-width: 1023px)" sizes="246px">
-                            <source srcset="./img/recipes/recipes-desk2.jpg 450w, ./img/recipes/recipes-desk2@2x.jpg 900w" media="(min-width: 1024px)" sizes="450px">
-                            <img src="./img/recipes/recipes-mob02.jpg" alt="">
+                            <source
+                                srcset="
+                                    ./img/recipes/recipes-mob02.jpg    246w,
+                                    ./img/recipes/recipes-mob02@2x.jpg 492w
+                                "
+                                media="(max-width: 1023px)"
+                                sizes="246px"
+                            />
+                            <source
+                                srcset="
+                                    ./img/recipes/recipes-desk2.jpg    450w,
+                                    ./img/recipes/recipes-desk2@2x.jpg 900w
+                                "
+                                media="(min-width: 1024px)"
+                                sizes="450px"
+                            />
+                            <img src="./img/recipes/recipes-mob02.jpg" alt="" />
                         </picture>
                         <h2>Tomato paste</h2>
                     </li>
@@ -238,38 +329,98 @@
             <section class="gallery" id="gallery">
                 <button type="button" aria-label="gallery button">
                     <svg class="icon-btn" width="32" height="32">
-                      <use href="./img/icons.svg#arrow-left"></use>
+                        <use href="./img/icons.svg#arrow-left"></use>
                     </svg>
                 </button>
                 <ul class="gallery-list">
                     <li class="galery-list__item">
                         <picture>
-                            <source srcset="./img\gallery\slide-desk1.jpg 1x, ./img\gallery\slide-desk1@2x.jpg 2x" media="(min-width: 1280px)">
-                            <source srcset="./img\gallery\slide-tab1.jpg 1x, ./img\gallery\slide-tab1@2x.jpg 2x" media="(min-width: 1024px)">
-                            <source srcset="./img\gallery\slide-mob1.jpg 1x, ./img\gallery\slide-mob1@2x.jpg 2x">
-                            <img src="./img/gallery/slide-mob1.jpg" alt="man picking big red juicy tomatoes">
+                            <source
+                                srcset="
+                                    ./img/gallery/slide-desk1.jpg    1x,
+                                    ./img/gallery/slide-desk1@2x.jpg 2x
+                                "
+                                media="(min-width: 1280px)"
+                            />
+                            <source
+                                srcset="
+                                    ./img/gallery/slide-tab1.jpg    1x,
+                                    ./img/gallery/slide-tab1@2x.jpg 2x
+                                "
+                                media="(min-width: 1024px)"
+                            />
+                            <source
+                                srcset="
+                                    ./img/gallery/slide-mob1.jpg    1x,
+                                    ./img/gallery/slide-mob1@2x.jpg 2x
+                                "
+                            />
+                            <img
+                                src="./img/gallery/slide-mob1.jpg"
+                                alt="man picking big red juicy tomatoes"
+                            />
                         </picture>
                     </li>
                     <li class="galery-list__item">
                         <picture>
-                            <source srcset="./img\gallery\slide-desk2.jpg 1x, ./img\gallery\slide-desk2@2x.jpg 2x" media="(min-width: 1280px)">
-                            <source srcset="./img\gallery\slide-tab2.jpg 1x, ./img\gallery\slide-tab2@2x.jpg 2x" media="(min-width: 1024px)">
-                            <source srcset="./img\gallery\slide-mob2.jpg 1x, ./img\gallery\slide-mob2@2x.jpg 2x">
-                            <img src="./img/gallery/slide-mob1.jpg" alt="little girls in the garden with big red tomatoes">
+                            <source
+                                srcset="
+                                    ./img/gallery/slide-desk2.jpg    1x,
+                                    ./img/gallery/slide-desk2@2x.jpg 2x
+                                "
+                                media="(min-width: 1280px)"
+                            />
+                            <source
+                                srcset="
+                                    ./img/gallery/slide-tab2.jpg    1x,
+                                    ./img/gallery/slide-tab2@2x.jpg 2x
+                                "
+                                media="(min-width: 1024px)"
+                            />
+                            <source
+                                srcset="
+                                    ./img/gallery/slide-mob2.jpg    1x,
+                                    ./img/gallery/slide-mob2@2x.jpg 2x
+                                "
+                            />
+                            <img
+                                src="./img/gallery/slide-mob1.jpg"
+                                alt="little girls in the garden with big red tomatoes"
+                            />
                         </picture>
                     </li>
                     <li class="galery-list__item">
                         <picture>
-                            <source srcset="./img\gallery\slide-desk3.jpg 1x, ./img\gallery\slide-desk3@2x.jpg 2x" media="(min-width: 1280px)">
-                            <source srcset="./img\gallery\slide-tab3.jpg 1x, ./img\gallery\slide-tab3@2x.jpg 2x" media="(min-width: 1024px)">
-                            <source srcset="./img\gallery\slide-mob3.jpg 1x, ./img\gallery\slide-mob3@2x.jpg 2x">
-                            <img src="./img/gallery/slide-mob1.jpg" alt="a farmer inspects a bush of tomatoes with ripe fruits">
+                            <source
+                                srcset="
+                                    ./img/gallery/slide-desk3.jpg    1x,
+                                    ./img/gallery/slide-desk3@2x.jpg 2x
+                                "
+                                media="(min-width: 1280px)"
+                            />
+                            <source
+                                srcset="
+                                    ./img/gallery/slide-tab3.jpg    1x,
+                                    ./img/gallery/slide-tab3@2x.jpg 2x
+                                "
+                                media="(min-width: 1024px)"
+                            />
+                            <source
+                                srcset="
+                                    ./img/gallery/slide-mob3.jpg    1x,
+                                    ./img/gallery/slide-mob3@2x.jpg 2x
+                                "
+                            />
+                            <img
+                                src="./img/gallery/slide-mob1.jpg"
+                                alt="a farmer inspects a bush of tomatoes with ripe fruits"
+                            />
                         </picture>
                     </li>
                 </ul>
                 <button type="button" aria-label="gallery button">
                     <svg class="icon-btn" width="32" height="32">
-                      <use href="./img/icons.svg#arrow-right"></use>
+                        <use href="./img/icons.svg#arrow-right"></use>
                     </svg>
                 </button>
             </section>
@@ -306,35 +457,38 @@
                 </ul>
             </address>
             <ul class="social-link">
-                    <li>
-                        <svg class="social-icon icon" width="24" height="24">
-                            <use href="./img/icons.svg#tumblr"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg class="social-icon icon" width="24" height="24">
-                            <use href="./img/icons.svg#instagram"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg class="social-icon icon" width="24" height="24">
-                            <use href="./img/icons.svg#youtube"></use>
-                        </svg>
-                    </li>
-                    <li>
-                        <svg class="social-icon icon" width="24" height="24">
-                            <use href="./img/icons.svg#twitter"></use>
-                        </svg>
-                    </li>
-                </ul>
-                <p>By using this website, you agree to the <a href="">Terms of Service</a> and <a href="">Privacy Policy</a></p>
+                <li>
+                    <svg class="social-icon icon" width="24" height="24">
+                        <use href="./img/icons.svg#tumblr"></use>
+                    </svg>
+                </li>
+                <li>
+                    <svg class="social-icon icon" width="24" height="24">
+                        <use href="./img/icons.svg#instagram"></use>
+                    </svg>
+                </li>
+                <li>
+                    <svg class="social-icon icon" width="24" height="24">
+                        <use href="./img/icons.svg#youtube"></use>
+                    </svg>
+                </li>
+                <li>
+                    <svg class="social-icon icon" width="24" height="24">
+                        <use href="./img/icons.svg#twitter"></use>
+                    </svg>
+                </li>
+            </ul>
+            <p>
+                By using this website, you agree to the <a href="">Terms of Service</a> and
+                <a href="">Privacy Policy</a>
+            </p>
         </footer>
-         <script
+        <script
             defer
             src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
             integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-            crossorigin="anonymous">
-        </script>
+            crossorigin="anonymous"
+        ></script>
         <script src="./js/mobile-menu.js"></script>
     </body>
 </html>

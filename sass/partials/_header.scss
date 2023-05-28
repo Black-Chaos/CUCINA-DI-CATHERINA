@@ -1,10 +1,11 @@
 .header {
     position: relative;
     background-image: $mob_bg_header;
-
-    .container {
-        display: flex;
-        padding: 12px 0;
+    @media only screen and (min-width: 960px) {
+        background-image: $bg_header;
+    }
+    @media only screen and (min-width: 1140px) {
+    margin-bottom: 3px;
     }
 }
 
@@ -15,9 +16,31 @@
     z-index: 99;
 }
 
-.desk-menu {
-    @media only screen and (max-width: 959px) {
-        display: none;
+.menu-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100dvh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background-color: getColor('body_bg');
+    transform: translateY(-100%);
+    @include transition;
+    z-index: 10;
+
+    .is-open & {
+        transform: translateY(0);
+    }
+
+    .logo {
+        gap: 20px;
+        align-self: start;
+        font-size: 16px;
+        line-height: 1.25;
     }
 }
 
@@ -28,25 +51,50 @@
     }
 }
 
-.menu-backdrop {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100dvh;
-    padding: 20px;
-    background-color: getColor('body_bg');
-    transform: translate(100%, -100%);
-    @include transition;
-    z-index: 10;
+.mob-nav {
+    display: grid;
+    gap: 28px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+}
 
-    .is-open & {
-        transform: translate(0, 0);
+.header {
+    .container {
+        min-height: 56px;
+        display: flex;
+        align-items: center;
+
+        @media only screen and (max-width: 960px) {
+        max-width: 960px;
+        }
+        @media only screen and (min-width: 960px) {
+            justify-content: space-between;
+        }
     }
 
-    .logo {
-        gap: 20px;
-        font-size: 16px;
-        line-height: 1.25;
+}
+
+.desk-menu {
+    display: flex;
+    align-items: center;
+    gap: 108px;
+
+    @media screen and (min-width: 1140px) {
+        gap: 201px;
+    }
+
+    @media only screen and (max-width: 959px) {
+        display: none;
+    }
+}
+
+.site-nav {
+    display: flex;
+    gap: 52px;
+    .link {
+        display: block;
+        padding: 30px 0;
     }
 }

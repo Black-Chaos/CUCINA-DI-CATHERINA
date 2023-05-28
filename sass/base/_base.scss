@@ -1,16 +1,11 @@
 body {
     font: 400 16px/1.25 'Montserrat', sans-serif;
-    background-color: getColor('body_bg');
     color: getColor('text');
-    overflow: hidden;
+    background-color: getColor('body_bg');
 }
 
-a {
-    color: inherit;
-}
-
-button {
-    border: none;
+section {
+    margin-bottom: 100px;
 }
 
 svg {
@@ -20,13 +15,23 @@ svg {
 .container {
     margin-inline: auto;
     padding-inline: 15px;
-    max-width: 384px;
+    min-width: 320px;
+    max-width: 414px;
 
     @media only screen and (min-width: 960px) {
-        max-width: 930px;
+        max-width: 960px;
     }
 
     @media only screen and (min-width: 1140px) {
-        max-width: 1110px;
+        max-width: 1140px;
     }
+}
+
+.link {
+    color: getColor('text');
+    transition: $trans_color;
+}
+
+.link:is(:hover, :focus) {
+    color: getColor('active');
 }

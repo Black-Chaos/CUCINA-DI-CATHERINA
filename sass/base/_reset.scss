@@ -38,15 +38,25 @@ dd {
     margin: 0;
 }
 
-
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 /* Упрощаем работу с изображениями */
 img {
     max-width: 100%;
+    height: auto;
     display: block;
+}
+
+picture {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    border: none;
 }
 
 /* Наследуем шрифты для инпутов и кнопок */
