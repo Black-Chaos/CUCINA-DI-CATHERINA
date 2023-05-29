@@ -74,7 +74,9 @@
                 <div class="container">
                     <div class="text-wrap">
                         <h1 class="hero-title">Cucina di catherina</h1>
-                        <p class="hero-text">We know,<br>you will <span class="accent">love</span> our product</p>
+                        <p class="hero-text">
+                            We know,<br />you will <span class="accent">love</span> our product
+                        </p>
                         <button class="prime-btn" type="button">Buy now</button>
                         <p class="desc">
                             <span class="wrap"><span class="digit">14</span> different tastes</span>
@@ -84,52 +86,60 @@
                         </p>
                     </div>
                     <picture class="hero-thumb">
-                        <source media="(min-width: 960px)"
-                            srcset="./img/hero/hero-img.avif 435w, ./img/hero/hero-img@2x.avif 870w" type="image/avif"
-                            sizes="435px"
-                        />
-                        <source media="(min-width: 960px)"
-                            srcset="./img/hero/hero-img.png 435w, ./img/hero/hero-img@2x.png 870w" type="image/png"
+                        <source
+                            media="(min-width: 960px)"
+                            srcset="./img/hero/hero-img.avif 435w, ./img/hero/hero-img@2x.avif 870w"
+                            type="image/avif"
                             sizes="435px"
                         />
                         <source
-                            srcset="./img/hero/hero-img-mob.avif 221w, ./img/hero/hero-img-mob@2x.avif 442w" type="image/avif"
+                            media="(min-width: 960px)"
+                            srcset="./img/hero/hero-img.png 435w, ./img/hero/hero-img@2x.png 870w"
+                            type="image/png"
+                            sizes="435px"
+                        />
+                        <source
+                            srcset="
+                                ./img/hero/hero-img-mob.avif    221w,
+                                ./img/hero/hero-img-mob@2x.avif 442w
+                            "
+                            type="image/avif"
                             sizes="202px"
                         />
                         <source
-                            srcset="./img/hero/hero-img-mob.png 221w, ./img/hero/hero-img-mob@2x.png 442w" type="image/png"
+                            srcset="
+                                ./img/hero/hero-img-mob.png    221w,
+                                ./img/hero/hero-img-mob@2x.png 442w
+                            "
+                            type="image/png"
                             sizes="202px"
                         />
-                        <img
-                            class="hero-img"
-                            src="./img/hero/hero-img-mob.png"
-                            alt="pasta sauce"
-                        />
+                        <img class="hero-img" src="./img/hero/hero-img-mob.png" alt="pasta sauce" />
                     </picture>
                     <ul class="social-link">
                         <li>
-                            <a class="link" href="">
+                            <a class="link" href="" aria-label="tumblr">
                                 <svg class="social-icon icon" width="24" height="24">
                                     <use href="./img/icons.svg#tumblr"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="link" href="">
+                            <a class="link" href="" aria-label="instagram">
                                 <svg class="social-icon icon" width="24" height="24">
                                     <use href="./img/icons.svg#instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="link" href="">
+                            <a class="link" href="" aria-label="youtube">
                                 <svg class="social-icon icon" width="24" height="24">
                                     <use href="./img/icons.svg#youtube"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a class="link" href="">
+                            <a class="link" href="" aria-label="twitter">
                                 <svg class="social-icon icon" width="24" height="24">
                                     <use href="./img/icons.svg#twitter"></use>
                                 </svg>
@@ -138,145 +148,165 @@
                     </ul>
                 </div>
             </section>
-            <section class="store">
-                <button type="button" aria-label="slider button">
-                    <svg class="btn-top icon-btn" width="32" height="32">
-                        <use href="./img/icons.svg#arrow-top"></use>
-                    </svg>
-                </button>
-                <ul>
-                    <li>
-                        <ul>
-                            <li>
-                                <img
-                                    srcset="
-                                        ./img/store/store-mob1.jpg     156w,
-                                        ./img/store/store-mob1@2x.jpg  312w,
-                                        ./img/store/store-desk1.jpg    349w,
-                                        ./img/store/store-desk1@2x.jpg 698w
-                                    "
-                                    sizes="(min-width: 1024px) 349px, 156px"
-                                    src="./img/store/store-mob1.jpg"
-                                    alt="sauce"
-                                />
-                                <h2>Classic sauce</h2>
-                                <p>
-                                    The most delicate taste of tomatoes, combined with branded
-                                    spices and white wine, will make your dish incredibly tasty.
-                                </p>
-                                <button>Buy now</button>
-                            </li>
-                            <li>
-                                <img
-                                    srcset="
-                                        ./img/store/store-mob2.jpg     156w,
-                                        ./img/store/store-mob2@2x.jpg  312w,
-                                        ./img/store/store-desk2.jpg    349w,
-                                        ./img/store/store-desk2@2x.jpg 698w
-                                    "
-                                    sizes="(min-width: 1024px) 349px, 156px"
-                                    src="./img/store/store-mob2.jpg"
-                                    alt="sauce"
-                                />
-                                <h2>Spicy sauce</h2>
-                                <p>
-                                    For thrill-seekers, we added hot chili pepper to our sauce, it
-                                    also reveals all the tastes and aromas of the sauce well.
-                                </p>
-                                <button>Buy now</button>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul>
-                            <li>
-                                <img
-                                    srcset="
-                                        ./img/store/store-mob3.jpg     156w,
-                                        ./img/store/store-mob3@2x.jpg  312w,
-                                        ./img/store/store-desk3.jpg    349w,
-                                        ./img/store/store-desk3@2x.jpg 698w
-                                    "
-                                    sizes="(min-width: 1024px) 349px, 156px"
-                                    src="./img/store/store-mob3.jpg"
-                                    alt="sauce"
-                                />
-                                <h2>Classic sauce</h2>
-                                <p>
-                                    The most delicate taste of tomatoes, combined with branded
-                                    spices and white wine, will make your dish incredibly tasty.
-                                </p>
-                                <button>Buy now</button>
-                            </li>
-                            <li>
-                                <img
-                                    srcset="
-                                        ./img/store/store-mob4.jpg     156w,
-                                        ./img/store/store-mob4@2x.jpg  312w,
-                                        ./img/store/store-desk4.jpg    349w,
-                                        ./img/store/store-desk4@2x.jpg 698w
-                                    "
-                                    sizes="(min-width: 1024px) 349px, 156px"
-                                    src="./img/store/store-mob4.jpg"
-                                    alt="sauce"
-                                />
-                                <h2>Spicy sauce</h2>
-                                <p>
-                                    For thrill-seekers, we added hot chili pepper to our sauce, it
-                                    also reveals all the tastes and aromas of the sauce well.
-                                </p>
-                                <button>Buy now</button>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul>
-                            <li>
-                                <img
-                                    srcset="
-                                        ./img/store/store-mob5.jpg     156w,
-                                        ./img/store/store-mob5@2x.jpg  312w,
-                                        ./img/store/store-desk5.jpg    349w,
-                                        ./img/store/store-desk5@2x.jpg 698w
-                                    "
-                                    sizes="(min-width: 1024px) 349px, 156px"
-                                    src="./img/store/store-mob5.jpg"
-                                    alt="sauce"
-                                />
-                                <h2>Classic sauce</h2>
-                                <p>
-                                    The most delicate taste of tomatoes, combined with branded
-                                    spices and white wine, will make your dish incredibly tasty.
-                                </p>
-                                <button>Buy now</button>
-                            </li>
-                            <li>
-                                <img
-                                    srcset="
-                                        ./img/store/store-mob6.jpg     156w,
-                                        ./img/store/store-mob6@2x.jpg  312w,
-                                        ./img/store/store-desk6.jpg    349w,
-                                        ./img/store/store-desk6@2x.jpg 698w
-                                    "
-                                    sizes="(min-width: 1024px) 349px, 156px"
-                                    src="./img/store/store-mob6.jpg"
-                                    alt="sauce"
-                                />
-                                <h2>Spicy sauce</h2>
-                                <p>
-                                    For thrill-seekers, we added hot chili pepper to our sauce, it
-                                    also reveals all the tastes and aromas of the sauce well.
-                                </p>
-                                <button>Buy now</button>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <button type="button" aria-label="slider button">
-                    <svg class="btn-bottom icon-btn" width="32" height="32">
-                        <use href="./img/icons.svg#arrow-bottom"></use>
-                    </svg>
-                </button>
+            <section class="store" id="store">
+                <div class="container">
+                    <button class="btn-top btn" type="button" aria-label="slider button">
+                        <svg class="icon-btn" width="32" height="32">
+                            <use href="./img/icons.svg#arrow-top"></use>
+                        </svg>
+                    </button>
+                    <button class="btn-bottom btn" type="button" aria-label="slider button">
+                        <svg class="icon-btn" width="32" height="32">
+                            <use href="./img/icons.svg#arrow-bottom"></use>
+                        </svg>
+                    </button>
+                    <ul class="store-items">
+                        <li class="store-item">
+                            <div class="store-card">
+                                <div class="card-thumb">
+                                    <img
+                                        srcset="
+                                            ./img/store/store-mob1.jpg     156w,
+                                            ./img/store/store-mob1@2x.jpg  312w,
+                                            ./img/store/store-desk1.jpg    349w,
+                                            ./img/store/store-desk1@2x.jpg 698w
+                                        "
+                                        sizes="(min-width: 960px) 349px, 156px"
+                                        src="./img/store/store-mob1.jpg"
+                                        alt="sauce"
+                                    />
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title">Classic sauce</h2>
+                                    <p class="card-text">
+                                        The most delicate taste of tomatoes, combined with branded
+                                        spices and white wine, will make your dish incredibly tasty.
+                                    </p>
+                                    <button class="prime-btn" type="button">Buy now</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-thumb">
+                                    <img
+                                        srcset="
+                                            ./img/store/store-mob2.jpg     156w,
+                                            ./img/store/store-mob2@2x.jpg  312w,
+                                            ./img/store/store-desk2.jpg    349w,
+                                            ./img/store/store-desk2@2x.jpg 698w
+                                        "
+                                        sizes="(min-width: 960px) 349px, 156px"
+                                        src="./img/store/store-mob2.jpg"
+                                        alt="sauce"
+                                    />
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title">Spicy sauce</h2>
+                                    <p class="card-text">
+                                        For thrill-seekers, we added hot chili pepper to our sauce, it
+                                        also reveals all the tastes and aromas of the sauce well.
+                                    </p>
+                                    <button class="prime-btn" type="button">Buy now</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="store-item">
+                            <div class="store-card">
+                                <div class="card-thumb">
+                                    <img
+                                        srcset="
+                                            ./img/store/store-mob3.jpg     156w,
+                                            ./img/store/store-mob3@2x.jpg  312w,
+                                            ./img/store/store-desk3.jpg    349w,
+                                            ./img/store/store-desk3@2x.jpg 698w
+                                        "
+                                        sizes="(min-width: 960px) 349px, 156px"
+                                        src="./img/store/store-mob3.jpg"
+                                        alt="sauce"
+                                    />
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title">Classic sauce</h2>
+                                    <p class="card-text">
+                                        The most delicate taste of tomatoes, combined with branded
+                                        spices and white wine, will make your dish incredibly tasty.
+                                    </p>
+                                    <button class="prime-btn" type="button">Buy now</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-thumb">
+                                    <img
+                                        srcset="
+                                            ./img/store/store-mob4.jpg     156w,
+                                            ./img/store/store-mob4@2x.jpg  312w,
+                                            ./img/store/store-desk4.jpg    349w,
+                                            ./img/store/store-desk4@2x.jpg 698w
+                                        "
+                                        sizes="(min-width: 960px) 349px, 156px"
+                                        src="./img/store/store-mob4.jpg"
+                                        alt="sauce"
+                                    />
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title">Spicy sauce</h2>
+                                    <p class="card-text">
+                                        For thrill-seekers, we added hot chili pepper to our sauce, it
+                                        also reveals all the tastes and aromas of the sauce well.
+                                    </p>
+                                    <button class="prime-btn" type="button">Buy now</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="store-item">
+                            <div class="store-card">
+                                <div class="card-thumb">
+                                    <img
+                                        srcset="
+                                            ./img/store/store-mob5.jpg     156w,
+                                            ./img/store/store-mob5@2x.jpg  312w,
+                                            ./img/store/store-desk5.jpg    349w,
+                                            ./img/store/store-desk5@2x.jpg 698w
+                                        "
+                                        sizes="(min-width: 960px) 349px, 156px"
+                                        src="./img/store/store-mob5.jpg"
+                                        alt="sauce"
+                                    />
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title">Classic sauce</h2>
+                                    <p class="card-text">
+                                        The most delicate taste of tomatoes, combined with branded
+                                        spices and white wine, will make your dish incredibly tasty.
+                                    </p>
+                                    <button class="prime-btn" type="button">Buy now</button>
+                                </div>
+                            </div>
+                            <div class="store-card">
+                                <div class="card-thumb">
+                                    <img
+                                        srcset="
+                                            ./img/store/store-mob6.jpg     156w,
+                                            ./img/store/store-mob6@2x.jpg  312w,
+                                            ./img/store/store-desk6.jpg    349w,
+                                            ./img/store/store-desk6@2x.jpg 698w
+                                        "
+                                        sizes="(min-width: 960px) 349px, 156px"
+                                        src="./img/store/store-mob6.jpg"
+                                        alt="sauce"
+                                    />
+                                </div>
+                                <div class="card-desc">
+                                    <h2 class="card-title">Spicy sauce</h2>
+                                    <p class="card-text">
+                                        For thrill-seekers, we added hot chili pepper to our sauce, it
+                                        also reveals all the tastes and aromas of the sauce well.
+                                    </p>
+                                    <button class="prime-btn" type="button">Buy now</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section>
                 <ul>

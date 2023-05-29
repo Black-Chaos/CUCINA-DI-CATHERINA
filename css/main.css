@@ -196,6 +196,8 @@ svg {
   .prime-btn {
     width: 195px;
     height: 43px;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 .prime-btn:is(:hover, :focus) {
@@ -524,5 +526,121 @@ svg {
   .social-icon {
     width: 16px;
     height: 16px;
+  }
+}
+.store .container {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 960px) {
+  .store .container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.store .btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  display: grid;
+  place-content: center;
+  color: #F3F3F3;
+  background: none;
+}
+.store .btn-top {
+  top: 8px;
+}
+.store .btn-bottom {
+  bottom: 8px;
+}
+
+.store-item {
+  max-width: 930px;
+  margin-inline: auto;
+}
+
+.store-card {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+@media screen and (max-width: 350px) {
+  .store-card {
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .store-card {
+    gap: 64px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .store-card {
+    gap: 90px;
+  }
+}
+.store-card:first-child {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 960px) {
+  .store-card:first-child {
+    margin-bottom: -40px;
+  }
+}
+.store-card:last-child {
+  flex-direction: row-reverse;
+}
+
+.card-thumb {
+  width: 156px;
+  height: 156px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 30px #7C7070);
+  overflow: hidden;
+}
+@media screen and (min-width: 960px) {
+  .card-thumb {
+    width: 349px;
+    height: 349px;
+    filter: drop-shadow(0px 0px 50px #7C7070);
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .card-desc {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 960px) {
+  .store-card:first-child .card-desc {
+    max-width: 406px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .store-card:last-child .card-desc {
+    max-width: 443px;
+  }
+}
+
+.card-title {
+  margin-bottom: 16px;
+}
+
+.card-text {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 959px) {
+  .card-text {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  .card-desc .prime-btn {
+    margin-inline: auto;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -10,6 +10,8 @@
     @media screen and (min-width: 960px) {
         width: 195px;
         height: 43px;
+        font-size: 20px;
+        line-height: 1.2;
     }
     &:is(:hover, :focus) {
     background-color: getColor('active');

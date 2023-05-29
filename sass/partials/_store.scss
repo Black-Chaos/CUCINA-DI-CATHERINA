@@ -1,0 +1,116 @@
+.store .container {
+    position: relative;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    @media screen and (min-width: 960px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+
+.store {
+    .btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0;
+        display: grid;
+        place-content: center;
+        color: getColor('text');
+        background: none;
+    }
+
+    .btn-top {
+        top: 8px;
+    }
+
+    .btn-bottom {
+        bottom: 8px;
+    }
+}
+.store-item {
+    max-width: 930px;
+    margin-inline: auto;
+}
+.store-card {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+
+    @media screen and (max-width: 350px) {
+        gap: 20px;
+    }
+
+    @media screen and (min-width: 960px) {
+        gap: 64px;
+    }
+
+    @media screen and (min-width: 1140px) {
+        gap: 90px;
+    }
+
+    &:first-child {
+        margin-bottom: 40px;
+
+        @media screen and (min-width: 960px) {
+            margin-bottom: -40px;
+        }
+    }
+
+    &:last-child {
+        flex-direction: row-reverse;
+    }
+}
+
+.card-thumb {
+    width: 156px;
+    height: 156px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    filter: $store_shadow_mob;
+    overflow: hidden;
+
+    @media screen and (min-width: 960px) {
+        width: 349px;
+        height: 349px;
+        filter: $store_shadow;
+    }
+}
+
+.card-desc {
+    @media screen and (max-width: 959px) {
+        text-align: center;
+    }
+
+    .store-card:first-child & {
+        @media screen and (min-width: 960px) {
+            max-width: 406px;
+        }
+    }
+
+    .store-card:last-child & {
+        @media screen and (min-width: 960px) {
+            max-width: 443px;
+        }
+    }
+}
+
+.card-title {
+    margin-bottom: 16px;
+
+}
+
+.card-text {
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 959px) {
+        display: none;
+    }
+}
+
+.card-desc .prime-btn {
+    @media only screen and (max-width: 959px) {
+        margin-inline: auto;
+    }
+}
